@@ -111,7 +111,7 @@ compose_switch_releases_url: "{{ cvm }}https://api.github.com/repos/docker/compo
 compose_switch_releases_download_url: https://github.com/docker/compose-switch/releases/download
 
 compose_switch_release_lookup_command: |
-  curl -s {{ compose_switch_releases_url }} \
+  curl -sL --insecure {{ compose_switch_releases_url }} \
     | jq -r ".assets[] | select(.name | test(\"docker-compose-linux-amd64\")) \
     | .browser_download_url"
 
