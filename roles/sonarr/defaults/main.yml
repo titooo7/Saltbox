@@ -122,7 +122,6 @@ sonarr_docker_commands: "{{ lookup('vars', sonarr_name + '_docker_commands_defau
 sonarr_docker_volumes_default:
   - "{{ sonarr_paths_location }}:/config"
   - "{{ server_appdata_path }}/scripts:/scripts"
-  - "/mnt/unionfs/tv:/mnt/unionfs/tv"
 sonarr_docker_volumes_custom: []
 sonarr_docker_volumes_theme:
   - "{{ sonarr_paths_location }}/98-themepark:/etc/cont-init.d/98-themepark"
