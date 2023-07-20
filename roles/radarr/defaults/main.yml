@@ -123,7 +123,6 @@ radarr_docker_commands: "{{ lookup('vars', radarr_name + '_docker_commands_defau
 radarr_docker_volumes_default:
   - "{{ radarr_paths_location }}:/config"
   - "{{ server_appdata_path }}/scripts:/scripts"
-  - "/mnt/unionfs/Media/Movies:/movies"
 radarr_docker_volumes_custom: []
 radarr_docker_volumes_theme:
   - "{{ radarr_paths_location }}/98-themepark:/etc/cont-init.d/98-themepark"
