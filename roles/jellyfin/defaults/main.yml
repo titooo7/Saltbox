@@ -134,7 +134,6 @@ jellyfin_docker_commands: "{{ lookup('vars', jellyfin_name + '_docker_commands_d
 jellyfin_docker_volumes_default:
   - "{{ jellyfin_paths_location }}:/config:rw"
   - "{{ server_appdata_path }}/scripts:/scripts"
-  - "/mnt/unionfs/Media:/data"
   - "/dev/shm:/dev/shm"
   - "{{ jellyfin_paths_transcodes_location }}:/transcode"
 jellyfin_docker_volumes_custom: []
