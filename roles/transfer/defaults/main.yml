@@ -22,6 +22,7 @@ transfer_paths_location: "{{ server_appdata_path }}/{{ transfer_paths_folder }}"
 transfer_uploads_location: "/tmp/{{ transfer_name }}"
 transfer_paths_folders_list:
   - "{{ transfer_uploads_location }}"
+transfer_uploads_location: "/tmp"
 
 ################################
 # Web
